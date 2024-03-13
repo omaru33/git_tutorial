@@ -1,80 +1,104 @@
 /* CSS */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .hero {
-    background-color: #f2f2f2;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .products {
-    padding: 50px;
-  }
-  
-  .products ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .products li {
-    width: 30%;
-    margin-bottom: 30px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .products img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.products {
+  padding: 50px;
+}
+
+.product-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.product-container {
+
+  width: 100%;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+.product-container ul {
+  list-style-type: armenian;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-container li {
+  width: 500px; /* カードの幅を500pxに固定 */
+  margin-right: 30px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.product-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
